@@ -1,0 +1,7 @@
+while true; do
+    d=$(date "+%a %bs %d %I:%M")		# output goes to the title window
+    b=$(acpi -b)
+    c="^fg(red)$d ^p(-[12*100]) ^fg(blue)$b"
+    echo "$c"
+    sleep 1
+  done | dzen2
