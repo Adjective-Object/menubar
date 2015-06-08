@@ -3,7 +3,7 @@
 import subprocess, time, sys, pywapi, traceback
 import os, signal, select, procname, toml
 
-with open(os.path.expanduser("~/.barrc")) as conffile:
+with open(os.path.expanduser("~/.mbarrc")) as conffile:
         config = toml.loads(conffile.read())
 
 def fitwidth(count, lstr, cstr, rstr):
