@@ -110,7 +110,7 @@ def makebstr(bstate):
 			else "neither")
 
 		chars+= [
-			genbatteryh(8, state[1], direction) +
+			genbatteryh(5, state[1], direction) +
 			str(int (100 * state[1])) +
 			"% (" + state[2] + ")"
 		]
